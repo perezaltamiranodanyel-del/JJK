@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --color-primario: #1e293b;   
@@ -20,6 +25,10 @@ body {
 header {
     background-color: var(--color-primario);
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 }
 
 .titulo-principal {
@@ -29,6 +38,8 @@ header {
 
 .menu-navegacion {
     list-style: none;
+    display:flex;
+    gap: 20px;
 }
 
 .enlace-nav {
@@ -51,9 +62,17 @@ main {
     font-weight: 600;
 }
 
+figure {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
 .imagen-destacada {
-    max-width: 300px;
-    height: auto;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 footer {
@@ -65,4 +84,44 @@ footer {
 .enlace-redes {
     color: var(--color-acento);
     text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.contenedor-tarjeta, .tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+   margin-top: 20px;
+}
+.tarjeta-herramienta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+   background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.tarjeta-herramienta .imagen-destacada {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0; 
+}
+
+.tarjeta-herramienta p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
 }
