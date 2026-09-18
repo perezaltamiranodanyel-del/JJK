@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,27 +19,33 @@ body {
     background-color: var(--color-secundario);
     color: var(--color-texto);
     font-family: var(--fuente-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 
 header {
     background-color: var(--color-primario);
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
+    gap: 15px;
 }
 
 .titulo-principal {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .menu-navegacion {
     list-style: none;
-    display:flex;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .enlace-nav {
@@ -54,31 +60,99 @@ header {
 
 main {
     background-color: #ffffff;
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .subtitulo-seccion {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--color-primario);
     font-weight: 600;
 }
 
 figure {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .imagen-destacada {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     object-fit: contain;
 }
+
+.tarjeta {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-herramientas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.tarjeta-herramienta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.tarjeta-herramienta .imagen-destacada {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.tarjeta-herramienta p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+}
+
+.layout-grilla-secciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "bienvenida"
+        "destacado"
+        "extra";
+    gap: 20px;
+}
+
+.area-bienvenida { grid-area: bienvenida; }
+.area-destacado  { grid-area: destacado; }
+.area-extra      { grid-area: extra; }
 
 footer {
     background-color: var(--color-primario);
     color: #ffffff;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .enlace-redes {
@@ -86,42 +160,42 @@ footer {
     text-decoration: none;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 30px;
-    margin-bottom: 25px;
-}
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
 
-.contenedor-tarjeta, .tarjeta {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 20px;
-   margin-top: 20px;
-}
-.tarjeta-herramienta {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-   background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-}
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
 
-.tarjeta-herramienta .imagen-destacada {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    flex-shrink: 0; 
-}
+    .menu-navegacion {
+        gap: 25px;
+    }
 
-.tarjeta-herramienta p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--color-texto);
-    margin: 0;
+    main {
+        padding: 40px;
+    }
+
+    /* Transformación del Layout Maestro en Index */
+    .layout-grilla-secciones {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "bienvenida destacado"
+            "extra      destacado";
+        gap: 30px;
+    }
+
+    /* Transformación de la Grilla de Herramientas (Servicios) */
+    .contenedor-herramientas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .tarjeta-herramienta {
+        flex-direction: column;
+        text-align: center;
+    }
 }
