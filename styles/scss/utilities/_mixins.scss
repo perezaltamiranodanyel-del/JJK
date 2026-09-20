@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+// Mixin con parámetros y operadores para transiciones y espaciados
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin con operador matemático avanzado para tamaños de botones/tarjetas
+@mixin padding-card($multiplicador: 1) {
+    padding: 10px * $multiplicador;
+    border-radius: 8px;
+}

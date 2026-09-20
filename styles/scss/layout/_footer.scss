@@ -1,0 +1,8 @@
+@use "../utilities/variables" as *;
+
+footer {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}

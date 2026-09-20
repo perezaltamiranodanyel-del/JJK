@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+
+.btn-base {
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
+}
