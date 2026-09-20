@@ -106,3 +106,8 @@ footer {
     text-align: center;
     padding: 20px;
 }
+#carouselServicios .carousel-item img {
+    max-height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
