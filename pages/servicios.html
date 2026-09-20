@@ -3,53 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
-        <h1 class="titulo-principal">Programas para automatizar</h1>
-        <nav>
-            <ul class="menu-navegacion">
-                <li><a class="enlace-nav" href="../index.html">Inicio</a></li>
-                <li><a class="enlace-nav" href="servicios.html">Servicios</a></li>
-                <li><a class="enlace-nav" href="contacto.html">Contacto</a></li>
-                <li><a class="enlace-nav" href="proyectos.html">Proyectos</a></li>
-                <li><a class="enlace-nav" href="sobre-mi.html">Sobre mi</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar px-3 w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-3 text-white" href="../index.html">Programas para automatizar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mi</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container my-4">
         <section>
             <h2 class="subtitulo-seccion">Galería de Herramientas</h2>
-            <p>Sistemas y herramientas para automatizar.</p>
+            
+            <article class="tarjeta">
+                <p>Sistemas y herramientas para automatizar.</p>
 
-            <div class="contenedor-herramientas">
-                <article class="tarjeta-herramienta">
-                    <img class="imagen-destacada" src="../imagen/excel.png" alt="Excel">
-                    <p>Excel es una herramienta de hoja de cálculo que permite organizar, analizar y visualizar datos de manera eficiente.</p>
-                </article>
+                <div class="contenedor-herramientas">
+                    <article class="tarjeta-herramienta">
+                        <img class="imagen-destacada" src="../imagen/excel.png" alt="Excel">
+                        <p>Excel es una herramienta de hoja de cálculo que permite organizar, analizar y visualizar datos de manera eficiente. Es ampliamente utilizada en entornos empresariales y académicos para realizar cálculos, crear gráficos y gestionar información.</p>
+                    </article>
 
-                <article class="tarjeta-herramienta">
-                    <img class="imagen-destacada" src="../imagen/pdf.png" alt="PDF">
-                    <p>PDF permite presentar documentos de manera independiente del software o sistema operativo utilizado.</p>
-                </article>
+                    <article class="tarjeta-herramienta">
+                        <img class="imagen-destacada" src="../imagen/pdf.png" alt="PDF">
+                        <p>PDF (Portable Document Format) es un formato de archivo desarrollado por Adobe que permite presentar documentos de manera independiente del software, hardware o sistema operativo utilizado. Es ampliamente utilizado para compartir documentos de manera segura y mantener su formato original.</p>
+                    </article>
 
-                <article class="tarjeta-herramienta">
-                    <img class="imagen-destacada" src="../imagen/SAP.png" alt="SAP">
-                    <p>SAP es un software ERP que integra diversos procesos de negocio en una única plataforma.</p>
-                </article>
-            </div>
+                    <article class="tarjeta-herramienta">
+                        <img class="imagen-destacada" src="../imagen/SAP.png" alt="SAP">
+                        <p>SAP (Systems, Applications, and Products) es un software de planificación de recursos empresariales (ERP) que integra diversos procesos de negocio en una única plataforma. Permite a las organizaciones gestionar sus operaciones, finanzas, recursos humanos y cadena de suministro de manera eficiente.</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+         <section class="area-destacado tarjeta mb-4">
+            <p>Integración de herramientas para acelerar el flujo de trabajo en tu empresa.</p>
+            <figure>
+                <img class="imagen-destacada" src="../imagen/logo (3).png" alt="Logo corporativo">
+            </figure>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 - Todos los derechos reservados.</p>
-        <p>Sígueme en mis redes: 
+        <p>Sígueme en mis redes:
             <a class="enlace-redes" href="https://www.instagram.com" target="_blank">Instagram</a> |
             <a class="enlace-redes" href="https://ar.linkedin.com" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
