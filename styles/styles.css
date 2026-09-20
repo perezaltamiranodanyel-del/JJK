@@ -51,7 +51,7 @@ main {
 }
 
 .carousel-inner img {
-    max-height: 350px;
+    max-height: 180px;
     object-fit: contain;
     background-color: #f1f5f9;
     border-radius: 8px;
@@ -106,8 +106,8 @@ footer {
     text-align: center;
     padding: 20px;
 }
-#carouselServicios .carousel-item img {
-    max-height: 250px;
+.carousel-item img {
+    max-height: 180px;
+    width: 100%;
     object-fit: contain;
-    background-color: #f8f9fa;
 }
