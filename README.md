@@ -11,7 +11,8 @@ Sitio web en desarrollado como proyecto final, aplicando estructuras avanzadas d
 
 ## 🌐 Enlace de Despliegue
 Puedes visualizar el sitio web funcionando en producción a través del siguiente enlace:
-- 👉 [Ver sitio desplegado (GitHub Pages)](https://perezaltamiranodanyel-del.github.io/JJK/
+- 👉 [Ver sitio desplegado (GitHub Pages)](https://perezaltamiranodanyel-del.github.io/JJK/)
+- 👉 [Ver sitio desplegado (netfly.com Pages)(exquisite-naiad-7eb4c5.netlify.app)
 
 ## 📂 Estructura del Proyecto
 - `index.html` (Página principal en la raíz).
