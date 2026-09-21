@@ -100,8 +100,8 @@ footer {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: var(--color-primario, #333);
+  background-color: var(--color-primario);
   border-radius: 50%;
-  padding: 20px;
-  background-size: 50%, 5ch;
+  padding: 15px;
+  filter: invert(1);
 }
